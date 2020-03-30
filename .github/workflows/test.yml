@@ -1,0 +1,24 @@
+
+name: CI
+
+on:
+  push:
+    branches: [ master ] 
+jobs:  
+  build:
+    runs-on: ubuntu-latest
+    steps:
+    - uses: actions/checkout@v2  
+    - name: Update paper list
+      run: |
+        cd problems
+    - name: commit
+      run: |
+        git config --global user.email yanxia_he@126.com
+        git config --global user.name Yanxiall
+        git add .
+        git commit -m "update" -a	
+    - name: Push changes
+      uses: ad-m/github-push-action@master
+      with:
+        github_token: ${{ secrets.GITHUB_TOKEN }}
