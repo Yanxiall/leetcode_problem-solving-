@@ -27,8 +27,7 @@ jobs:
         git config --global user.email yanxia_he@126.com
         git config --global user.name Yanxiall
         git add .
-        git commit -m "update" -a
-		
+        git commit -m "update" -a	
     - name: Push changes
       uses: ad-m/github-push-action@master
       with:
