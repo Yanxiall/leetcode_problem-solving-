@@ -8,7 +8,10 @@ jobs:
   build:
     runs-on: ubuntu-latest
     steps:
-    - uses: actions/checkout@v2   
+    - uses: actions/checkout@v2  
+    - name: Update paper list
+      run: |
+        cd problems
     - name: commit
       run: |
         git config --global user.email yanxia_he@126.com
