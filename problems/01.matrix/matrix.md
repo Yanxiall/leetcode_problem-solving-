@@ -17,7 +17,7 @@ Output:
 [[0,0,0],  
  [0,1,0],  
  [0,0,0]]  
-**Example 2: ** 
+**Example 2:** 
 
 Input:  
 [[0,0,0],  
@@ -41,7 +41,7 @@ The cells are adjacent in only four directions: up, down, left and right.
 
 We can see that the distance of every element in the matrix is dependent on its adjacent elements. Every element has four adjacent elements in four direction. In this way we can find its transition equation. It shows in the following. Finally we traverse the matrix twice, separately from top left to bottom right and otherwise.
 
-![transition equtation](transition equtation.png)
+![transition_equation](transition_equation.png)
 
 # Solution:
 
