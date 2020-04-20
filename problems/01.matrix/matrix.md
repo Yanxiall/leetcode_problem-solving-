@@ -39,7 +39,9 @@ The cells are adjacent in only four directions: up, down, left and right.
 
 **Method 1:**
 
-***Breadth First Search(BFS)***Traverse the matrix to get all 0, and push their index into a queue. Define a vector ***res*** to restore the result, and a vector ***seen*** to record all the visited element;  Always pop the first element of the queue and traverse its surrounding elements, if they are not visited, push it into queue. In this way,  In the first round we get all the element the distance of which from 0 is 1, In the second round is 2, then 3,... so we update the result by adding the last visited element to 1.
+***Breadth First Search(BFS)*** 
+
+Traverse the matrix to get all 0, and push their index into a queue. Define a vector ***res*** to restore the result, and a vector ***seen*** to record all the visited element;  Always pop the first element of the queue and traverse its surrounding elements, if they are not visited, push it into queue. In this way,  In the first round we get all the element the distance of which from 0 is 1, In the second round is 2, then 3,... so we update the result by adding the last visited element to 1.
 
 **Method 2:**
 
